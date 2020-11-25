@@ -1,42 +1,42 @@
 /* setting corporate color */
 :root {
-    --corpcolor:  #2196F3;
-    /* !!!!CHANGE TO WHITE AFTER BACKGROUND COLOR IS APPLIED!!! */
-    --mainwhite: tomato;
+  --corpcolor: #2196f3;
+  /* !!!!CHANGE TO WHITE AFTER BACKGROUND COLOR IS APPLIED!!! */
+  --mainwhite: #ffffff;
 }
 
 /* MAIN SETTINGS */
 body {
-    font-family: Roboto, sans-serif;
-    color: #212121;
-    font-size: 14px;
-    font-weight: 400;
+  font-family: Roboto, sans-serif;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 a {
-    text-decoration: none;
-    color: #212121;
+  text-decoration: none;
+  color: #212121;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 address {
-    font-style: normal;
+  font-style: normal;
 }
 .section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 /* visually-hidden helper */
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -51,112 +51,122 @@ input[type='radio'].visually-hidden {
 /* END MAIN SETTINGS */
 /* NAV AREA */
 .logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
 }
 .corp-color {
-    color: var(--corpcolor);
+  color: var(--corpcolor);
 }
 .logo-black {
-    color: #000000;
+  color: #000000;
 }
 .main-white {
-    color: var(--mainwhite);
+  color: var(--mainwhite);
 }
 .navlink {
-    font-weight: 500;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
 }
+
+.upper-contacts {
+  color: #757575;
+}
+
+.upper-link:hover,
+.upper-link:focus,
 .upper-contacts:hover,
 .upper-contacts:focus {
-    color: var(--corpcolor);
+  color: var(--corpcolor);
 }
 /* END NAV AREA */
 /* HERO AREA */
 .hero {
-    text-align: center;
+  text-align: center;
 }
 .main-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.363;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    }
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 .order-link {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    letter-spacing: 0.06em;
-}    
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
 /* END HERO AREA*/
 /* VALUES AREA */
 .value-title {
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    line-height: 1.142;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: inherit;
+  text-transform: uppercase;
+  line-height: 1.142;
 }
 .value-desc {
-    /* font-size: inherit; */
-    line-height: 1.714;    
-    letter-spacing: 0.03em;
-    color: #757575;
+  /* font-size: inherit; */
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 /* END VALUES AREA */
 /* OUR TEAM AREA */
 .our-team {
-    font-size: 16px;
-    line-height: 1.188;
-    text-align: center;
-    letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-name {
-    font-weight: 500;    
+  font-weight: 500;
 }
 .team-role {
-    color:  #757575;
+  color: #757575;
 }
 /* END OUR TEAM AREA */
 /* FOOTER AREA */
 .footer-text {
-    line-height: 1.714;
-    letter-spacing: 0.03em;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 .footer-adress {
-    color: var(--mainwhite)
+  color: var(--mainwhite);
 }
 .footer-contacts {
-    /* color: rgba(255, 255, 255, 0.6); */
+  color: rgba(255, 255, 255, 0.6);
 }
 /* END OF FOOTER AREA */
 /* PORTFOLIO PAGE */
 .radio-text {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.63;
-text-align: center;
-letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  color: inherit;
 }
 .radio-text:hover,
 .radio-text:focus {
-    color: var(--mainwhite)
+  color: var(--mainwhite);
 }
 .grid-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .grid-desc {
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: #757575;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 /* END OF PORTFOLIO PAGE */
