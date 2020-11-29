@@ -1,11 +1,18 @@
 /* setting corporate color */
 :root {
   --corpcolor: #2196f3;
-  /* !!!!CHANGE TO WHITE AFTER BACKGROUND COLOR IS APPLIED!!! */
   --mainwhite: #ffffff;
 }
 
 /* MAIN SETTINGS */
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}  
+img {
+  display: block;
+}
 body {
   font-family: Roboto, sans-serif;
   color: #212121;
@@ -20,8 +27,6 @@ a {
 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 address {
   font-style: normal;
@@ -50,7 +55,23 @@ input[type="radio"].visually-hidden {
 }
 /* END MAIN SETTINGS */
 /* NAV AREA */
-.logo {
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 25px 15px;
+  margin: 0 auto;
+  align-items: center;
+  }
+
+  .upper-logo-navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 532px;
+  }
+
+  .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -70,6 +91,10 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
+  display: flex;
+}
+.navlink li:not(:last-child){
+  margin-right: 50px;
 }
 
 .upper-contacts {
@@ -86,6 +111,10 @@ input[type="radio"].visually-hidden {
 /* HERO AREA */
 .hero {
   text-align: center;
+  min-height: 600px;
+  background-color: #2F303A;
+  padding-top: 200px;
+
 }
 .main-title {
   font-weight: 900;
@@ -93,22 +122,55 @@ input[type="radio"].visually-hidden {
   line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  }
 .order-link {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
   letter-spacing: 0.06em;
-}
+  display: inline-block;
+  min-width: 200px;
+  background-color: var(--corpcolor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 15px 0;
+  }
 /* END HERO AREA*/
 /* VALUES AREA */
+.values {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 94px 15px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.values-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.value-card {
+  width: 270px;
+}
+.value-card:not(:last-of-type) {
+  margin-right: 30px;
+}
 .value-title {
   font-weight: 700;
   letter-spacing: 0.03em;
   font-size: inherit;
   text-transform: uppercase;
   line-height: 1.142;
+  margin-bottom: 10px;
 }
 .value-desc {
   /* font-size: inherit; */
@@ -117,7 +179,52 @@ input[type="radio"].visually-hidden {
   color: #757575;
 }
 /* END VALUES AREA */
+/* WHAT WE DO AREA */
+.what-we-do {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+}
+.we-do-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.we-do-image:not(:last-of-type) {
+padding-right: 30px;
+}
+.we-do-title {
+  margin-bottom: 50px;
+}
+
+/* END WAHT WE DO AREA */
 /* OUR TEAM AREA */
+.team-section {
+background-color: #F5F4FA;
+padding: 94px 0;
+}
+.team-title {
+  margin-bottom: 50px;
+}
+.team-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.team-card {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--mainwhite);
+  padding-bottom: 30px;
+}
+.team-card:not(:last-of-type) {
+  margin-right: 30px;
+}
 .our-team {
   font-size: 16px;
   line-height: 1.188;
@@ -126,12 +233,27 @@ input[type="radio"].visually-hidden {
 }
 .team-name {
   font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-role {
   color: #757575;
 }
 /* END OUR TEAM AREA */
 /* FOOTER AREA */
+.footer {
+  background-color: #2F303A;
+  padding: 60px 0;
+  }
+.footer-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.footer-logo {
+  margin-bottom: 20px;
+  display: inline-block;
+}
 .footer-text {
   line-height: 1.714;
   letter-spacing: 0.03em;
