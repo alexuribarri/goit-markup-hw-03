@@ -59,11 +59,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
-  padding: 25px 15px;
+  padding: 0 15px;
   margin: 0 auto;
   align-items: center;
   }
-
+.header-container {
+  border-bottom: 1px solid #ECECEC;
+}
   .upper-logo-navlinks {
     display: flex;
     align-items: center;
@@ -99,6 +101,12 @@ input[type="radio"].visually-hidden {
 
 .upper-contacts {
   color: #757575;
+}
+
+.upper-link,
+.upper-contacts{
+  padding: 32px 0;
+  display: inline-block;
 }
 
 .upper-link:hover,
@@ -266,7 +274,7 @@ padding: 94px 0;
 }
 /* END OF FOOTER AREA */
 /* PORTFOLIO PAGE */
-.radio-text {
+.radio-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -274,21 +282,65 @@ padding: 94px 0;
   letter-spacing: 0.03em;
   font-family: inherit;
   color: inherit;
+  background: #F5F4FA;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
 }
-.radio-text:hover,
-.radio-text:focus {
+.radio-btn:hover,
+.radio-btn:focus {
   color: var(--mainwhite);
+  background-color: var(--corpcolor);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
 }
 .grid-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .grid-desc {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.portfolio-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 94px auto;
+}
+.buttons-container {
+  display: flex;
+  padding-bottom: 16px;
+  margin: 0 auto 34px;
+  justify-content: center;
+}
+.portfolio-button {
+
+}
+
+.portfolio-button:not(:last-of-type) {
+  margin-right: 8px;
+}
+.portfolio-grid {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.portfolio-desc {
+  border: 1px solid #EEEEEE;
+  padding: 20px 24px;
+}
+
+.portfolio-card:not(:nth-of-type(n+7)) {
+  margin-bottom: 30px;
+}
+
+.portfolio-card:not(:nth-of-type(3n)) {
+margin-right: 30px;
 }
 /* END OF PORTFOLIO PAGE */
