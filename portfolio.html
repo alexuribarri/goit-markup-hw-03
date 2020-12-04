@@ -10,8 +10,8 @@
   </head>
   <body>
     <!-- HEADER -->
-    <div class="header-container">
-      <header class="header">
+    <header class="header">
+      <div class="header-container">
         <nav class="upper-logo-navlinks">
           <a href="index.html" class="logo"
             ><span class="corp-color">Web</span
@@ -19,29 +19,30 @@
           >
           <ul class="navlink">
             <li><a href="index.html" class="upper-link">Студия</a></li>
-            <li><a href="portfolio.html" class="corp-color upper-link">Портфолио</a></li>
+            <li><a href="portfolio.html" class="upper-link corp-color">Портфолио</a></li>
             <li><a href="#" class="upper-link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="navlink">
-          <li>
-            <a href="mailto:info@devstudio.com" class="upper-contacts"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="upper-contacts"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </header>
-    </div>
+          <ul class="navlink">
+            <li>
+              <a href="mailto:info@devstudio.com" class="upper-contacts"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="upper-contacts"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div> 
+    </header>
        <!-- END HEADER -->
     <main>
       <!-- main section -->
-      <section class="portfolio-container">
-        <!-- radiobutton filetrs -->
+      <section>
+        <div class="portfolio-container">
+            <!-- radiobutton filetrs -->
         <h1 class="visually-hidden">Наше Портфолио</h1>
         <ul class="buttons-container">
           <li class="portfolio-button"><button type="button" class="radio-btn portfolio-button">Все</button></li>
@@ -135,6 +136,8 @@
               </div></a>
           </li>
         </ul>
+          
+        </div>      
         <!-- end main grid -->
       </section>
       <!-- end main section -->
@@ -148,7 +151,7 @@
       <address>
         <span class="footer-text footer-adress">г. Киев, пр-т Леси Украинки, 26</span>
         <ul>
-          <li>
+          <li class="footer-margin">
             <a
               href="mailto:info@example.com"
               class="footer-text footer-contacts"
